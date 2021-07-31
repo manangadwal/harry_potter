@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 35),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -56,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
                           labelText: "Username",
                           hintText: " Enter username",
                           hintStyle: TextStyle(
-                              fontSize: 7,
+                              fontSize: 5,
                               fontWeight: FontWeight.w100,
                               color: Colors.white)),
                       onChanged: (name) {
@@ -84,7 +84,7 @@ class _LoginPageState extends State<LoginPage> {
                           labelText: "Password",
                           hintText: " Enter password",
                           hintStyle: TextStyle(
-                              fontSize: 10,
+                              fontSize: 5,
                               fontWeight: FontWeight.w100,
                               color: Colors.white)),
                       validator: (value) {
@@ -97,7 +97,7 @@ class _LoginPageState extends State<LoginPage> {
                       controller: _textcontroler2,
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 25,
                     ),
                     Material(
                       borderRadius: BorderRadius.circular(cb ? 50 : 5),

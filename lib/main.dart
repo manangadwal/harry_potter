@@ -2,9 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:harry_potter/login.dart';
 import 'package:video_player/video_player.dart';
+import 'package:flutter/services.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: Colors.transparent));
   runApp(myVideo());
 }
 
@@ -48,7 +51,7 @@ class _myVideoState extends State<myVideo> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        "POTTER  HEADS",
+                        "POTTERHEADS",
                         style: TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.bold,
@@ -59,6 +62,17 @@ class _myVideoState extends State<myVideo> {
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          Container(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                "Sign in",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
                           LoginPage(),
                           SizedBox(
                             height: 10,
