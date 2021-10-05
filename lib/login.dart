@@ -87,13 +87,6 @@ class _LoginPageState extends State<LoginPage> {
                               fontSize: 5,
                               fontWeight: FontWeight.w100,
                               color: Colors.white)),
-                      validator: (value) {
-                        if (value != "12345678") {
-                          return "wrong username or password";
-                        }
-
-                        return null;
-                      },
                       controller: _textcontroler2,
                     ),
                     SizedBox(
@@ -105,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: InkWell(
                         // splashColor: Colors.amber,
                         enableFeedback: true,
-                        onTap: () => movetohome(context),
+                        onTap: () {},
                         child: AnimatedContainer(
                           duration: Duration(seconds: 1),
                           height: cb ? 60 : 50,
